@@ -1,42 +1,52 @@
-*{margin: 0; 
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
 
+ /* para que la barra de navegacion sea transparente  */ 
 
 header .navbar {
-    background-color: transparent !important;
-  }
-
-.estiloFavicons{
-    background-color: #0cc4f4;
-    color: #FFFF;
-    width: 100%;
-    text-align: center;
+  background-color: transparent;
 }
-
-.esqueletoHtml{ 
+ /*  estilo de favicons fondo y color de letra y que sea responsivo with100%*/ 
+.estiloFavicons {
+  background-color: #0cc4f4;
+  color: #FFFF;
+  width: 100%;
+  text-align: center;
+}
+ /* agegado de padding par aestructura html  */ 
+.esqueletoHtml {
   padding-left: 100px;
   padding-right: 100px;
 }
-
-#estiloTitulo{ 
+ /* alineamiento de titulos  */ 
+#estiloTitulo {
   text-align: center;
 }
 
 body {
   background-color: black;
   color: #FFFF;
-  font-family: 'Cabin'!important;
+  font-family: 'Cabin' !important;
 }
-
-.card{ 
+ /*  color de fondo de cards */ 
+.card {
   background-color: #0cc4f4;
 }
 
-#tamanoFavicon{ 
-  font-size: 70px;
+ /* tamaño de iconos */ 
+#tamanoFavicon {
+  font-size: 20px;
+}
+ /* color de footer y letras  */ 
+#estiloFooter {
+  background-color: #0cc4f4!important;
+  color: #FFFFFF;
+
 }
 
- 
+#tituloFooter{ 
+  padding-left: 280px;
+}
