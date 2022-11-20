@@ -1,8 +1,6 @@
 *{margin: 0; 
 padding: 0;
-box-sizing: border-box;}
-body{
-    
+box-sizing: border-box;
 }
  
 
@@ -10,3 +8,35 @@ body{
 header .navbar {
     background-color: transparent !important;
   }
+
+.estiloFavicons{
+    background-color: #0cc4f4;
+    color: #FFFF;
+    width: 100%;
+    text-align: center;
+}
+
+.esqueletoHtml{ 
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#estiloTitulo{ 
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: #FFFF;
+  font-family: 'Cabin'!important;
+}
+
+.card{ 
+  background-color: #0cc4f4;
+}
+
+#tamanoFavicon{ 
+  font-size: 70px;
+}
+
+ 
