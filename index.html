@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link href="assets\css\style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-    <header>
-        <nav class="nav">
-            <div class="logo"> Viajes Chile </div>
-            <ul class="menu">
-                <li><a href="#"> Inicio </a> </li> 
-                <li><a href="#"> Quienes Somos</a> </li> 
-                <li><a href="#"> Destacados </a> </li> 
-                <li><a href="#"> Contacto</a> </li> 
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #544F4F">
+        <h2 class="tipoFuente">Viajes Chile</h2>
+        <!-- codigo de navbar sacado de bootstrap para que se vea la barra rosada superior (navbar) dentro del navbar se agregan textos de inicio, productos y contactos-->
+
+        <!-- aca se agrega la imagen con la ruta de assets donde se define la class "logo" revisar en CSS !-->
+        <button class="navbar-toggler btn btn-success" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span style="padding: 15px;" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-nav navbar-collapse collapse navbar-expand w-100
+            order-3 dual-collapse2 justify-content-end">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand text-white" class="fuenteMenu" href="#">Inicio</a>
+                </li>
+                <!-- para cada elemento que se visualiza en navbar se dejó dentro de un ul y li respectivamente 
+        donde se agregaran las etiquetas <a> con la clase predeterminada de bootstrap para botones que es navbar-brand adicionalmente para que el texto se vea blanco 
+          se agrego el estilo text-white que es una propiedad de bootstrap (buscar en documentacion oficial)-->
+                <div>
+                    <li class="nav-item" class="botonesNav">
+                        <a class="navbar-brand text-white" class="fuenteMenu" href="#">Quienes Somos</a>
+
+                    </li>
+                </div>
+                <li class="nav-item">
+                    <a class="navbar-brand text-white" class="fuenteMenu" href="#">Destacado</a>
+                </li>
+                <li class="fuenteMenu">
+                    <a class="navbar-brand text-white" class="fuenteMenu" href="#">Contacto</a>
+                </li>
+                </li>
             </ul>
-            </nav> 
-    </header>
-    
+        </div>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets\img\carousel1.jpg" class="d-block w-100" style="width: 100%" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets\img\carousel2.jpg" class="d-block w-100" style="width: 100%" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets\img\carousel3.jpg" class="d-block w-100" style="width: 100%" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+</header>
+
+<body>
+    <br>
+    <h1>¿Quiénes Somos?</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <span class="material-symbols-outlined">
+                connecting_airports
+                </span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque at nemo suscipit, quidem placeat recusandae corporis? Ex iure ratione rem modi tempore aliquid quaerat culpa maiores magni non, saepe eos.</p>
+        </div>
+        <div class="col-md-4">
+         
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt enim sequi tempore ab aliquam earum. Repudiandae fugiat ipsam excepturi explicabo deleniti! Voluptatibus iste ipsum molestiae aspernatur recusandae nulla eos!</p>
+            <span class="material-symbols-outlined">
+                change_history
+            </span>
+        </div>
+        <div class="col-md-4">
+            <span class="material-symbols-outlined">
+                location_on
+                </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatibus, quam, dolores rerum inventore odit error iure non sapiente voluptate nobis ipsam, cumque totam eos dignissimos ullam at fuga quos.</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
